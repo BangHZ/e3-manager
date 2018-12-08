@@ -21,9 +21,15 @@ public class ItemController {
 	private ItemService itemService;
 	
 	@RequestMapping("/item/{itemId}")
-	public @ResponseBody TbItem getItemById(@PathVariable Long itemId) {
+	@ResponseBody
+	public TbItem getItemById(@PathVariable Long itemId) {
 		TbItem item = itemService.getTbItemById(itemId);
 		return item;
 	} 
 	
+	@RequestMapping("/item/test")
+	@ResponseBody
+	public String test() {
+		return "能访问到";
+	}
 }
