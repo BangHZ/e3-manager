@@ -27,7 +27,7 @@ public class ItemServiceImpl implements ItemService{
 	 *  查询商品信息
 	 */
 	@Override
-	public TbItem getTbItemById(Long itemId) {
+	public TbItem getTbItemById(long itemId) {
 		// 根据主键查询tbitem
 //		TbItem item = tbItemMapper.selectByPrimaryKey(itemId);
 		TbItemExample example = new TbItemExample();

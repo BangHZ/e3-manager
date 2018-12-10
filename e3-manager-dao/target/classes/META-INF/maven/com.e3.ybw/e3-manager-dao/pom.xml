@@ -45,6 +45,7 @@
 	<!-- 如果不添加此节点mybatis的mapper.xml文件都会被漏掉。 -->
 	<build>
 		<resources>
+<<<<<<< HEAD
             <resource>
                 <directory>src/main/java</directory>
                 <includes>
@@ -54,5 +55,16 @@
                 <filtering>false</filtering>
             </resource>
         </resources>
+=======
+			<resource>
+				<directory>src/main/java</directory>
+				<includes>
+					<include>**/*.properties</include>
+					<include>**/*.xml</include>
+				</includes>
+				<filtering>false</filtering>
+			</resource>
+		</resources>
+>>>>>>> refs/remotes/origin/master
 	</build>
 </project>
